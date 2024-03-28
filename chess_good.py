@@ -501,13 +501,9 @@ class Game(object):
             print(f"Игра окончена! Победили - {to_move}")
         return
 
-def recurs():
-    recurs()
 
+board1 = Chess_Board()
+play = Game(board1)
 
-
-# board1 = Chess_Board()
-# play = Game(board1)
-#
-# while not play.checkmate:
-#     play.turn(play.to_move)
+while not play.checkmate:
+    play.turn(play.to_move)
